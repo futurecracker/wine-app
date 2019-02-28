@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title *ngIf="!isSearchbarOpened">
+      Post
+    </ion-title>
+    <ion-searchbar *ngIf="!isSearchbarOpened"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="wine1">
+      <ion-img class="img1" src="/assets/frenchwine.jpg" ></ion-img>
+      <ion-card-content>
+        <h3 class="WineName">
+          Romanee Conti
+        </h3>
+        <p class="content">
+          This is a famous french wine that was made in Paris in the year 1901.
+        </p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small class="LikeButton">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>0 Likes</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card class="wine1">
+        <ion-img class="img1" src="/assets/bordeauxwine.jpg" ></ion-img>
+        <ion-card-content>
+            <h3 class="WineName">
+                Absolut Bordeaux
+            </h3>
+          <p class="content">
+            The bordeaux wine has a special unique taste that is not available in other normal wines in the world
+          </p>
+        </ion-card-content>
+        <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small class="LikeButton">
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>0 Likes</div>
+              </button>
+            </ion-col>
+          </ion-row>
+      </ion-card>
+</ion-content>
