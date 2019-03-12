@@ -1,0 +1,51 @@
+/*.img1 ion-img{
+    max-height: 20vh;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+  }*/
+
+  .wine1{
+    align-content: center;
+    align-items: center;
+  }
+
+  .topnav {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0e1763;
+  }
+  
+  .topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: #0f0d0d;
+  }
+
+  .img1 {
+    width: 150px;
+    height: 140px;
+  }
+  
+  .content{
+    color: black;
+  }
+  
+  .WineName{
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+  }
+
+  .BuyButton{
+    background-color: White;
+  }
