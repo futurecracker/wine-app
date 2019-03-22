@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title *ngIf="!isSearchbarOpened">
+      Post
+    </ion-title>
+    <ion-searchbar *ngIf="!isSearchbarOpened"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item *ngFor="let post of Posts | async">
+<p>Post: {{post.name | json}}</p>
+</ion-item>
+<ion-content>
+    <ion-row class="topnav">
+       <ion-col><a href="../red-wine" routerDirection="forward">Red Wine</a></ion-col>
+       <ion-col><a href="../white-wine" routerDirection="forward">White Wine</a></ion-col>
+       <ion-col><a href="../french-wine" routerDirection="forward">French Wine</a></ion-col>
+       <ion-col><a href="../classic-wine" routerDirection="forward">Classic Wine</a></ion-col>
+    </ion-row>
+    <ion-card class="wine1">
+      <ion-img class="img1" src="/assets/frenchwine.jpg" ></ion-img>
+      <ion-card-content>
+        <p class="content">
+          This is a famous french wine that was made in Paris in the year 1901.
+        </p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small class="LikeButton" (click)="likeButtonClick()" [ngClass]="{'LikeButtonClicked':knowing}" >
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>{{numberOfLikes}} likes</div>
+          </button>
+        </ion-col>
+        <ion-col>
+            <button class="CommentButton">
+              <ion-icon name="text"></ion-icon>
+                <div>Comments</div>
+            </button>
+          </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card class="wine1">
+        <ion-img class="img1" src="/assets/bordeauxwine.jpg" ></ion-img>
+        <ion-card-content>
+          <p class="content">
+            The bordeaux wine has a special unique taste that is not 
+            available in other normal wines in the world
+          </p>
+        </ion-card-content>
+        <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small class="LikeButton" (click)="likeButtonClick()" [ngClass]="{'LikeButtonClicked':knowing}">
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>{{numberOfLikes}} likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+                <button class="CommentButton">
+                  <ion-icon name="text"></ion-icon>
+                    <div>Comments</div>                  
+                </button>
+              </ion-col>
+          </ion-row>
+      </ion-card>
+</ion-content>

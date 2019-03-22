@@ -1,0 +1,63 @@
+.img1 {
+  width: 150px;
+  height: 120px;
+}
+
+.topnav {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0e1763;
+}
+
+li {
+  float: left;
+}
+
+.topnav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #0f0d0d;
+}
+
+.content{
+  color: black;
+  font-size: 12px;
+}
+
+.WineName{
+  font-size: medium;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
+
+.LikeButton{
+  background-color: White;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px;
+}
+
+.LikeButtonClicked{
+  background-color: blue;
+  color: white;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px;
+}
+
+.CommentButton{
+  background-color: White;
+}

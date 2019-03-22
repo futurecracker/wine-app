@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <button routerLink="../tabs/tab2" routerDirection="forward" class="BackButton">
+      <ion-icon icon-left name="arrow-round-back"></ion-icon>
+      <ion-title class="Title">Shopping Cart</ion-title>
+      </button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="topnav">
+     <ion-col><a href="../red-wine" routerDirection="forward">Red Wine</a></ion-col>
+     <ion-col><a href="../white-wine" routerDirection="forward">White Wine</a></ion-col>
+     <ion-col><a href="../french-wine" routerDirection="forward">French Wine</a></ion-col>
+     <ion-col><a href="../classic-wine" routerDirection="forward">Classic Wine</a></ion-col>
+  </ion-row>
+  <ion-card class="wine1">
+    <ion-img class="img1" src="/assets/frenchwine.jpg" ></ion-img>
+    <ion-card-content>
+      <p class="content">
+        This is a famous french wine that was made in Paris in the year 1901.
+      </p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <p class="price">
+         <b>Price: $19</b> 
+        </p>
+      </ion-col>
+      <ion-col>
+          <p class="quantity">
+            <b>Quantity:</b> 
+            <input type="number" id="number" value=1/>
+          </p>
+        </ion-col>
+    </ion-row>
+  </ion-card>
+  <p class="CartAdding">
+      <button class="addtoCart">
+        Add to Cart
+      </button>
+  </p>
+</ion-content>

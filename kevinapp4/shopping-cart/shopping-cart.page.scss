@@ -1,0 +1,53 @@
+.BackButton{
+    background-color: White;
+  }
+
+.Title{
+    display: inline-block;
+}
+
+.img1 {
+  width: 150px;
+  height: 140px;
+}
+
+.topnav {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0e1763;
+}
+
+.topnav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #0f0d0d;
+}
+
+.price, .quantity{
+  color: black;
+}
+
+.CartAdding{
+  //background-color: #0e1763;
+  //width: 150px;
+  text-align: center;
+  //padding: 4px 6px;
+ // margin-left: 10%;
+}
+
+.addtoCart{
+  background-color: #0e1763;
+  color: white;
+  width: 100%;
+  padding: 7px;
+}
+
+

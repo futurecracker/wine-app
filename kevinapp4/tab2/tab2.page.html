@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title *ngIf="!isSearchbarOpened">
+        Shop
+      </ion-title>
+      <ion-searchbar *ngIf="!isSearchbarOpened"></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+      <ion-row class="topnav">
+          <ion-col><a href="../red-wine" routerDirection="forward">Red Wine</a></ion-col>
+          <ion-col><a href="../white-wine" routerDirection="forward">White Wine</a></ion-col>
+          <ion-col><a href="../french-wine" routerDirection="forward">French Wine</a></ion-col>
+          <ion-col><a href="../classic-wine" routerDirection="forward">Classic Wine</a></ion-col>
+       </ion-row>  
+      <ion-card class="wine1">
+        <ion-img class="img1" src="/assets/frenchwine.jpg" ></ion-img>
+        <ion-card-content>
+          <h3 class="WineName">
+            Romanee Conti
+          </h3>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <div>Price $19</div>
+          </ion-col>
+          <ion-col>
+              <button class="BuyButton">
+              <a href="../shopping-cart" routerDirection="forward">BUY</a>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+      <ion-card class="wine1">
+          <ion-img class="img1" src="/assets/bordeauxwine.jpg" ></ion-img>
+          <ion-card-content>
+              <h3 class="WineName">
+                  Absolut Bordeaux
+              </h3>
+          </ion-card-content>
+          <ion-row>
+            <ion-col>
+              <p>Price $20</p>
+            </ion-col>
+            <ion-col>
+              <button class="BuyButton">
+                <a href="../shopping-cart" routerDirection="forward">BUY</a>
+              </button>
+            </ion-col>           
+            </ion-row>
+        </ion-card>
+  </ion-content>
